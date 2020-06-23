@@ -19,7 +19,7 @@ const FileUpload = () => {
     formData.append("file", file);
 
     try {
-      const res = await Axios.post("/upload", formData, {
+      const res = await Axios.post("http://localhost:3333/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -47,7 +47,7 @@ const FileUpload = () => {
             id="customFile"
             onChange={onChange}
           />
-          <label className="custom-file-label" htmlfor="customFile">
+          <label className="custom-file-label" htmlFor="customFile">
             {fileName}
           </label>
         </div>

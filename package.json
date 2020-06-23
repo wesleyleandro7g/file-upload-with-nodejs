@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node src/Server.js",
-    "server": "nodemon src/Server.js",
+    "start": "node Server.js",
+    "server": "nodemon Server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\" "
   },
